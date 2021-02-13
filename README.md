@@ -2,7 +2,7 @@ I have created the files to capture the weather dashboard foro this homework pro
 
 An html file a css file and a js file.
 
-weather2.html
+weather.html
 weather.css
 weather.js
 
