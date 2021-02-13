@@ -154,7 +154,8 @@ h5 {
 }
 
 .card-body {
-    padding: 5px;
+    padding: 15px;
+    justify-content: end;
 }
 
 
