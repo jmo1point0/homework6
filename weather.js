@@ -14,9 +14,9 @@ var lat
 //variables for five-day forecast
 var icon
 var fdate
-var ftemp
+var forecasttemp
 var ficon
-var fhumid
+var forecasthumid
 //var to create array of all data
 var previous
 var retrievedData
@@ -61,8 +61,8 @@ async function searchUV(city){
     for ( var i=0; i < 5; i++ ) {
     uvindex = uvi.current.uvi
     ficon = uvi.daily[i].weather[0].icon
-    ftemp = uvi.daily[i].temp.day - 273
-    fhumid = uvi.daily[i].humidity
+    forecasttemp = uvi.daily[i].temp.day - 273
+    forecasthumid = uvi.daily[i].humidity
     }
    
     publishResults(city) 
@@ -111,9 +111,9 @@ function publishResults(city){
 }
  
 function storePrevious(city) {
-    //add most recently searched city to previously searched cities
+    //add most recently searched city or country to previously searched cities
     console.log(`store ${city}`)
-    //add city to local storage
+    //add city or country to local storage
 
     let previous = JSON.parse(localStorage.getItem("previous")) || [];
     if (previous.indexOf(city) === -1) {

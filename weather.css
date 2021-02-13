@@ -2,6 +2,7 @@ body{
     font-size: 14pt; 
     font-family: Georgia, Times, 'Times New Roman';
     background-color: rgb(214, 217, 228);
+    /*background-image: url(blue-sky-with-cloud-clean-energy-power-clear-weather-background_43284-844.jpg);*/
     font-weight: 400;
 }
 
@@ -15,7 +16,7 @@ header {
 }
 
 #searchIntro {
-    padding: 20px;
+    padding: 24px;
     font-weight: bold;
 }
 
@@ -32,7 +33,7 @@ form.example button {
     float: left;
     width: 20%;
     padding:  10px;
-    background: rgb(34, 51, 150);
+    background: rgb(255, 241, 49);
     color: white;
     font-size: 14px;
     border:1px solid grey;
@@ -42,7 +43,7 @@ form.example button {
 }
 
 form.example button:hover {
-    background:rgb(53, 80, 235);
+    background:rgb(241, 228, 46);
 }
 
 form.example::after {
