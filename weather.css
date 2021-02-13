@@ -158,4 +158,8 @@ h5 {
     justify-content: end;
 }
 
-
+footer {
+    position: sticky;
+    bottom: 0;
+    padding: 10px;
+}
