@@ -33,7 +33,7 @@ async function searchCity(city) {
 
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
 
-    // fetch info based on location entered
+    // fetch info for location instered
     fetch(urlWeather).then(response => response.json())
         .then(json => {
             console.log(json)
@@ -44,7 +44,7 @@ async function searchCity(city) {
             document.getElementById("humidity").innerHTML = "Humidity: " + json.main.humidity
             document.getElementById("wind").innerHTML = "Wind Speed: " + json.wind.speed
             document.getElementById("weatherIcon").src = "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png"
-            // lat & lon to get the UV index 
+            // lat & long --  UV index 
             var lat = json.coord.lat
             var lon = json.coord.lon
             forecast(city)
@@ -53,14 +53,14 @@ async function searchCity(city) {
         .catch(err => console.log('Request failed', err))
 }
 
-// function to insert 5 day forecast into the HTML
+// function to insert 5 day forecast
 function forecast(city) {
     // 5 day forecast fetch
     var forecastURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIkey + "&units=metric";
     fetch(forecastURL).then(response => response.json())
         .then(json => {
             console.log(json)
-            // reset html to not repeat 5 day forecast over and over again
+            // reset the HTML so it does not repeat the 5 day forecast
             document.getElementById("fiveDay").innerHTML = ""
             for (let i = 0; i < json.list.length; i++) {
                 if (json.list[i].dt_txt.indexOf("15:00:00") !== -1) {
@@ -77,7 +77,6 @@ function forecast(city) {
               <p class="card-text">${"Humidity: " + json.list[i].main.humidity + "%"}</p>
             </div>
           </div> `
-                    // insert
                     document.getElementById("fiveDay").innerHTML += col
                 }
         }
@@ -94,7 +93,7 @@ function uv(lat, lon) {
         })
 }
 
-// create list of cities searched to be added underneath search 
+// create list of cities searched 
 function createList(city) {
     var cityList = document.getElementById("searchedCities")
     var list = `<button>${city}</button>`

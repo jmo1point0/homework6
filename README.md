@@ -1,4 +1,4 @@
-I have created the files to capture the weather dashboard for this homework project.
+I have created the files to capture the weather dashboard forgit  this homework project.
 
 An html file a css file and a js file.
 
