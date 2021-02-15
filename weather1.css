@@ -1,0 +1,79 @@
+body {
+    font-size: 20px;
+    font-family:'Cambria', Courier, monospace;
+    background-color: rgb(240, 231, 231);
+    font-weight: 200;
+
+}
+
+header {
+    background: rgb(53, 80, 235);
+    font-size: 42pt;
+    color:black;
+    padding:40px;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+.container-fluid {
+    margin-right: 15px;
+}
+
+.searchCont {
+    padding: 25px;
+    
+}
+
+#cityInput {
+    height: 50px;
+}
+
+#searchButton {
+    background-color: rgb(255, 241, 91);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#searchButton:hover {
+    transform: scale(1.1);
+    background-color:rgb(248, 231, 42);
+}
+
+.currentDay {
+    padding: 10px;
+    margin-top: 15px;
+}
+
+
+.fiveday {
+    text-align: center;
+    background-color: rgb(53, 80, 235);
+    padding: 10px;
+    font-size: 18pt;
+}
+
+h3 {
+    padding-bottom: 5px;
+}
+
+button {
+    float: left;
+    width: 20%;
+    padding:  10px;
+    background: rgb(255, 228, 46);
+    color: white;
+    font-size: 14px;
+    border:1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    margin:0;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background:rgb(241, 228, 46);
+}
+
+

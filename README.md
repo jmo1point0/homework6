@@ -2,9 +2,9 @@ I have created the files to capture the weather dashboard foro this homework pro
 
 An html file a css file and a js file.
 
-weather.html
-weather.css
-weather.js
+weather1.html
+weather1.css
+weather1.js
 
 The weather dashboard allows you to search any country or city in the world. You can view all kinds of data on the weather like: temperature, humidity, wind speed, uv index.
 
