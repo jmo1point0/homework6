@@ -43,7 +43,7 @@ async function searchCity(city) {
             document.getElementById("temperature").innerHTML = "Temperature: " + json.main.temp
             document.getElementById("humidity").innerHTML = "Humidity: " + json.main.humidity
             document.getElementById("wind").innerHTML = "Wind Speed: " + json.wind.speed
-            document.getElementById("weatherIcon").src = "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png"
+            document.getElementById("weatherIcon").src = "https://openweathermap.org/img/w/" + json.weather[0].icon + ".png"
             // lat & long --  UV index 
             var lat = json.coord.lat
             var lon = json.coord.lon
@@ -56,7 +56,7 @@ async function searchCity(city) {
 // function to insert 5 day forecast
 function forecast(city) {
     // 5 day forecast fetch
-    var forecastURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIkey + "&units=metric";
+    var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIkey + "&units=metric";
     fetch(forecastURL).then(response => response.json())
         .then(json => {
             console.log(json)
@@ -71,7 +71,7 @@ function forecast(city) {
               <h5 class="card-title">${new Date(
                         json.list[i].dt_txt
                     ).toLocaleDateString()}</h5>
-              <img src='${"http://openweathermap.org/img/w/" + json.list[i].weather[0].icon + ".png"}'/>
+              <img src='${"https://openweathermap.org/img/w/" + json.list[i].weather[0].icon + ".png"}'/>
               <p class="card-text">${"Temperature: " + json.list[i].main.temp_max +
                         " °C"}</p>
               <p class="card-text">${"Humidity: " + json.list[i].main.humidity + "%"}</p>
@@ -85,7 +85,7 @@ function forecast(city) {
 
 // get UV index for daily forecast
 function uv(lat, lon) {
-    let uvURL = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIkey + "&lat=" + lat + "&lon=" + lon;
+    let uvURL = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIkey + "&lat=" + lat + "&lon=" + lon;
     fetch(uvURL).then(response => response.json())
         .then(json => {
             console.log(json)
