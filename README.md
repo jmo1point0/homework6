@@ -23,7 +23,7 @@ Reach out to me on my GitHub page at the following Link:
  -[GitHub Profile](https://github.com/jmo1point0)    
  Or by email: jordan.mossing@gmail.com
 
- ## Link: https://jmo1point0.github.io/homework6/
+ ### Link: https://jmo1point0.github.io/homework6/
 
 
 
