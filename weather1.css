@@ -3,6 +3,7 @@ body {
     font-family:'Cambria', Courier, monospace;
     background-color: rgb(240, 231, 231);
     font-weight: 200;
+    overflow: scroll;
 
 }
 
@@ -22,11 +23,25 @@ header {
 
 .searchCont {
     padding: 25px;
+    height: 200vh;
+    position: fixed;
+    color:rgb(53, 80, 235)
     
 }
 
 #cityInput {
     height: 50px;
+}
+
+#searchedCities {
+ height: auto;
+border: 1px solid gray;
+padding: 5px;
+width: 100%;
+margin-bottom: 5px;
+margin-top: 5px;
+position: absolute;
+
 }
 
 #searchButton {
