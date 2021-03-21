@@ -15,7 +15,7 @@ Multiple tests were done to get the product working as it was initially visioned
 
 ### Screenshot:
  
-### ![Image](./weatherdash.PNG)
+### ![Image](./assets/weatherdash.PNG)
 
 ### Questions:
  
